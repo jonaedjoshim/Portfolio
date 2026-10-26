@@ -1,0 +1,89 @@
+{
+  "intro": "Competitive programming helps me become a more thoughtful problem solver. I enjoy exploring algorithms, working through challenging problems, and improving the way I reason about solutions.",
+  "journey": "My interest in problem solving grew as I moved from web development into C++, data structures, and algorithms. Competitive programming gave me a structured way to practice logical thinking, understand constraints, and learn from mistakes.",
+  "approach": "I try to understand why a solution works, not just whether it passes. When I struggle with a problem, I revisit the underlying concepts, study alternative approaches, and look for ways to improve my reasoning.",
+  "platforms": [
+    {
+      "name": "Codeforces",
+      "username": "Md_Jonaed_Joshim",
+      "url": "https://codeforces.com/profile/Md_Jonaed_Joshim",
+      "description": "Competitive programming contests and algorithmic problem solving.",
+      "icon": "codeforces.svg",
+      "primary": true
+    },
+    {
+      "name": "CodeChef",
+      "username": "jonaed_joshim",
+      "url": "https://www.codechef.com/users/jonaed_joshim",
+      "description": "Programming contests and structured problem-solving practice.",
+      "icon": "codechef.svg",
+      "primary": true
+    },
+    {
+      "name": "LeetCode",
+      "username": "h6vQHfPlh3",
+      "url": "https://leetcode.com/u/h6vQHfPlh3/",
+      "description": "Data structures, algorithms, and interview-style problems.",
+      "icon": "leetcode.svg",
+      "primary": true
+    },
+    {
+      "name": "HackerRank",
+      "username": "mdjonaedjoshim",
+      "url": "https://www.hackerrank.com/profile/mdjonaedjoshim",
+      "description": "Programming fundamentals and problem-solving challenges.",
+      "icon": "hackerrank.svg",
+      "primary": true
+    },
+    {
+      "name": "AtCoder",
+      "username": "md_jonaed_joshim",
+      "url": "https://atcoder.jp/users/md_jonaed_joshim",
+      "description": "Algorithmic contests and programming challenges.",
+      "icon": "atcoder.png",
+      "primary": false
+    },
+    {
+      "name": "VJudge",
+      "username": "jonaed_joshim",
+      "url": "https://vjudge.net/user/jonaed_joshim",
+      "description": "Problem-solving practice across online judges.",
+      "icon": "vjudge.ico",
+      "primary": false
+    },
+    {
+      "name": "GeeksforGeeks",
+      "username": "mdjonaedwx3i",
+      "url": "https://www.geeksforgeeks.org/profile/mdjonaedwx3i",
+      "description": "Learning and practicing programming concepts.",
+      "icon": "geeksforgeeks.svg",
+      "primary": false
+    },
+    {
+      "name": "CSES",
+      "username": "511265",
+      "url": "https://cses.fi/user/511265",
+      "description": "Algorithmic problems organized by topic.",
+      "icon": "cses.png",
+      "primary": false
+    }
+  ],
+  "focusAreas": [
+    {
+      "title": "Data Structures",
+      "description": "Understanding how data can be organized and accessed efficiently."
+    },
+    {
+      "title": "Algorithms",
+      "description": "Studying different approaches to solving computational problems."
+    },
+    {
+      "title": "Complexity Analysis",
+      "description": "Learning to evaluate time and memory requirements."
+    },
+    {
+      "title": "Logical Reasoning",
+      "description": "Breaking difficult problems into smaller, manageable steps."
+    }
+  ]
+}

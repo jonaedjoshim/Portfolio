@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "languages",
+      "title": "Programming Languages",
+      "description": "Languages I use for development and problem solving.",
+      "skills": ["C", "C++", "JavaScript", "TypeScript", "Python (Basics)"]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend Development",
+      "description": "Tools and technologies for building responsive web interfaces.",
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Bootstrap",
+        "DaisyUI",
+        "Next.js (Learning)"
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend & Authentication",
+      "description": "Technologies I've worked with while building full-stack projects.",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Firebase Authentication",
+        "Better Auth"
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Databases",
+      "description": "Data storage technologies I've explored.",
+      "skills": ["MongoDB", "PostgreSQL (Exploring)"]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Deployment",
+      "description": "Everyday tools and platforms used in my development workflow.",
+      "skills": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "npm",
+        "Vercel",
+        "Netlify",
+        "Render"
+      ]
+    }
+  ],
+  "currentlyLearning": [
+    "Advanced React Patterns",
+    "TypeScript",
+    "Next.js",
+    "Data Structures & Algorithms",
+    "Backend Architecture"
+  ]
+}

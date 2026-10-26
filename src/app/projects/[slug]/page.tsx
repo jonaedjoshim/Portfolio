@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import {
   ArrowLeft,
   ArrowUpRight,
+  BookOpen,
   Check,
   Code2,
   ExternalLink,
@@ -165,6 +166,44 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
               <p className="mt-5 text-base leading-8 text-muted">
                 {detail.overview}
               </p>
+            </section>
+
+            {/* PROJECT STORY */}
+            <section
+              aria-labelledby="project-story-heading"
+              className="rounded-2xl border border-accent/25 bg-accent/5 p-6 sm:p-8"
+            >
+              <div className="flex items-start gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                  <BookOpen size={21} aria-hidden="true" />
+                </div>
+
+                <div>
+                  <p className="font-mono text-xs text-accent">
+                    Behind the Build
+                  </p>
+
+                  <h2
+                    id="project-story-heading"
+                    className="mt-2 text-xl font-bold tracking-tight text-foreground"
+                  >
+                    The story behind {project.name}
+                  </h2>
+
+                  <p className="mt-3 text-sm leading-7 text-muted">
+                    Discover the idea, challenges, decisions, and lessons that
+                    shaped this project.
+                  </p>
+
+                  <Link
+                    href={`/projects/${project.slug}/story`}
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+                  >
+                    Read Project Story
+                    <ArrowUpRight size={17} aria-hidden="true" />
+                  </Link>
+                </div>
+              </div>
             </section>
 
             {/* KEY FEATURES */}

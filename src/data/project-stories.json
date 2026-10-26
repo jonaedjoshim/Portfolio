@@ -1,0 +1,177 @@
+{
+  "gradepilot": {
+    "title": "From a GPA Calculator to GradePilot",
+    "subtitle": "How a small academic problem became a full-stack learning project.",
+    "readingTime": "5 min read",
+    "sections": [
+      {
+        "heading": "Where It Started",
+        "paragraphs": [
+          "GradePilot started with a problem I could relate to: calculating university results was not always straightforward. I wanted a simpler way to work through GPA and CGPA calculations without repeating the same manual steps.",
+          "The earliest idea was modest—a calculator that could take course information and produce useful academic results. But as I worked on it, I began thinking about what students might need beyond a single calculation."
+        ]
+      },
+      {
+        "heading": "Growing Beyond the Calculator",
+        "paragraphs": [
+          "I gradually expanded GradePilot into a more complete application. Instead of calculating a result and immediately losing it, I wanted users to be able to return to their information and understand their academic progress.",
+          "That direction introduced new responsibilities: authentication, persistent data, result organization, and clearer interfaces. The project became an opportunity to connect frontend work with backend development."
+        ]
+      },
+      {
+        "heading": "The Authentication Challenge",
+        "paragraphs": [
+          "One of the most memorable difficulties was integrating Better Auth. Getting the authentication flow working across the application took several hours of debugging.",
+          "It pushed me to pay more attention to how sessions, requests, configuration, and frontend behavior interact. The experience also reminded me that integrating a library is not always as simple as following a short example."
+        ]
+      },
+      {
+        "heading": "Understanding the Calculation Logic",
+        "paragraphs": [
+          "Academic calculations require more than an attractive form. Grading rules and edge cases matter, and an incorrect result can make the entire feature unreliable.",
+          "I used documentation, examples, and AI-assisted suggestions while exploring the implementation, but I also spent time understanding the grading rules and reviewing the calculation approach rather than treating generated logic as automatically correct."
+        ]
+      },
+      {
+        "heading": "What I Learned",
+        "paragraphs": [
+          "GradePilot strengthened my understanding of how a project grows from a focused feature into a connected application. It gave me more practical experience with authentication, data persistence, and user-focused interface decisions.",
+          "It also taught me to take debugging seriously. A feature can look simple from the outside while requiring substantial investigation behind the scenes."
+        ]
+      },
+      {
+        "heading": "Where I Want to Take It",
+        "paragraphs": [
+          "I would like to explore academic schedules, routines, and additional student-focused tools in the future.",
+          "For now, GradePilot represents an important part of my development journey: starting with a real problem, expanding the idea, and learning through the difficulties that followed."
+        ]
+      }
+    ]
+  },
+  "zapshift": {
+    "title": "Learning Full-Stack Workflows with ZapShift",
+    "subtitle": "Exploring authentication, data, and logistics-focused interfaces.",
+    "readingTime": "4 min read",
+    "sections": [
+      {
+        "heading": "The Project Idea",
+        "paragraphs": [
+          "ZapShift was built as part of my full-stack web development learning journey. Parcel delivery systems are interesting because they connect multiple workflows: users, parcels, locations, and administrative operations.",
+          "I approached the project as an opportunity to understand how these connected pieces could work together inside a web application."
+        ]
+      },
+      {
+        "heading": "Connecting the Pieces",
+        "paragraphs": [
+          "The project involved React on the frontend, backend APIs, MongoDB for application data, and Firebase for authentication.",
+          "Working across these layers helped me understand how frontend interfaces depend on backend responses and how application state changes as users perform different actions."
+        ]
+      },
+      {
+        "heading": "Thinking About Roles and Locations",
+        "paragraphs": [
+          "Delivery-oriented applications often need different interfaces for different responsibilities. Exploring role-oriented workflows made me think more carefully about how information and actions should be organized.",
+          "I also worked with map-related interfaces using React Leaflet. This introduced a different type of UI problem compared with traditional forms and content layouts."
+        ]
+      },
+      {
+        "heading": "Challenges Along the Way",
+        "paragraphs": [
+          "Connecting frontend functionality with backend APIs and database operations required careful debugging. Problems were not always isolated to a single component, so I had to think about how requests, responses, authentication, and stored data interacted.",
+          "The project reinforced the importance of building and verifying one workflow at a time."
+        ]
+      },
+      {
+        "heading": "Lessons and Future Direction",
+        "paragraphs": [
+          "ZapShift helped me gain experience with larger application structures and the coordination required between frontend and backend code.",
+          "I would like to continue refining delivery-related workflows, validation, and tracking functionality while improving overall usability."
+        ]
+      }
+    ]
+  },
+  "noxcodec": {
+    "title": "Building NoxCodec: Morse Code Meets the Terminal",
+    "subtitle": "A small curiosity turned into an interactive frontend experiment.",
+    "readingTime": "4 min read",
+    "sections": [
+      {
+        "heading": "A Curiosity About Morse Code",
+        "paragraphs": [
+          "NoxCodec began with my curiosity about Morse code. The idea of representing communication through dots, dashes, and sound felt both technical and creative.",
+          "I wanted to build something that let people experiment with Morse code without needing a complicated interface."
+        ]
+      },
+      {
+        "heading": "Choosing the Visual Direction",
+        "paragraphs": [
+          "I chose a terminal-inspired interface because it fit the project's theme. Rather than creating a plain text converter, I wanted the experience to feel like a small communication tool.",
+          "At the same time, I tried to keep the core interactions understandable: enter text, see the conversion, and explore the audio output."
+        ]
+      },
+      {
+        "heading": "Working with Conversion and Sound",
+        "paragraphs": [
+          "Morse encoding and decoding involve different input patterns. Supporting both directions meant thinking about how text and signals should be interpreted and displayed.",
+          "Audio playback added another layer of interaction. The timing of dots, dashes, and pauses matters because Morse code is not just a visual format."
+        ]
+      },
+      {
+        "heading": "What Made It Interesting",
+        "paragraphs": [
+          "Unlike my larger full-stack projects, NoxCodec focuses on frontend behavior and presentation. That made it a useful exercise in building responsive interactions without relying on a backend.",
+          "It also gave me an opportunity to combine a technical topic with a more distinctive visual identity."
+        ]
+      },
+      {
+        "heading": "Ideas for the Future",
+        "paragraphs": [
+          "One idea I would like to explore is a messaging experience where Morse code becomes part of the communication process.",
+          "I also want to improve playback controls and accessibility so the project remains useful beyond its visual theme."
+        ]
+      }
+    ]
+  },
+  "tuition-finder": {
+    "title": "Tuition Finder and the Importance of Clear Requirements",
+    "subtitle": "An unfinished project that taught me lessons beyond code.",
+    "readingTime": "4 min read",
+    "sections": [
+      {
+        "heading": "How It Began",
+        "paragraphs": [
+          "Tuition Finder began after a local client approached me about a tuition-related website. The initial idea appeared relatively simple and focused on frontend information.",
+          "As conversations continued, the expected scope expanded toward a full-stack application."
+        ]
+      },
+      {
+        "heading": "When the Scope Changed",
+        "paragraphs": [
+          "Moving from a frontend concept with static data to a more complete application changed the amount of work and planning required.",
+          "The project involved exploring React, Firebase authentication, backend APIs, and MongoDB. However, the requirements were not consistently finalized."
+        ]
+      },
+      {
+        "heading": "The Difficult Part Was Not Only Technical",
+        "paragraphs": [
+          "The biggest lesson was about communication and scope. It is difficult to estimate or complete work when the expected features continue changing without a clearly agreed plan.",
+          "Eventually, communication with the prospective client stopped. The project was not completed, accepted, or delivered as paid client work."
+        ]
+      },
+      {
+        "heading": "What I Took Away",
+        "paragraphs": [
+          "The experience helped me understand why requirements, deliverables, timelines, and expectations should be clarified before development goes too far.",
+          "It also reminded me that unfinished projects can still provide useful learning, as long as their status is represented accurately."
+        ]
+      },
+      {
+        "heading": "What Comes Next",
+        "paragraphs": [
+          "Tuition Finder remains an incomplete project. If I return to it, I would first define a smaller, verifiable set of features and complete those before expanding the application.",
+          "My priority would be finishing the main discovery workflows, validation, and a reliable user experience."
+        ]
+      }
+    ]
+  }
+}

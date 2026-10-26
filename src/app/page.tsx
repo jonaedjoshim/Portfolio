@@ -1,50 +1,29 @@
+import HeroSection from "@/components/hero/hero-section";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
-      {/* HERO PREVIEW */}
+    <main>
+      <HeroSection />
 
-      <section className="container-custom flex min-h-[calc(100svh-4.5rem)] flex-col justify-center py-20">
-        <div className="max-w-3xl">
-          <p className="mb-5 font-mono text-sm tracking-widest text-accent uppercase">
-            Web Developer & Competitive Programmer
+      {/* UPCOMING HOMEPAGE SECTIONS */}
+      <section
+        id="hero-next"
+        className="container-custom scroll-mt-24 py-24 sm:py-32"
+      >
+        <div className="max-w-2xl">
+          <p className="mb-3 font-mono text-sm text-accent">Selected Work</p>
+
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            Featured Projects
+          </h2>
+
+          <p className="mt-4 leading-7 text-muted">
+            A selection of projects that reflect my interest in practical web
+            development, thoughtful interfaces, and continuous learning.
           </p>
 
-          <h1 className="text-5xl font-semibold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Md Jonaed Joshim
-          </h1>
-
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-            I build thoughtful web applications, solve challenging problems, and
-            continuously explore better ways to turn ideas into working
-            software.
-          </p>
-
-          {/* HERO ACTIONS */}
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="inline-flex min-h-11 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
-            >
-              Explore Projects
-            </a>
-
-            <a
-              href="https://github.com/jonaedjoshim"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center justify-center rounded-lg border border-border bg-surface px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface-secondary"
-            >
-              View GitHub
-            </a>
-          </div>
-        </div>
-
-        {/* PREVIEW FOOTER */}
-
-        <div className="mt-20 border-t border-border pt-6">
-          <p className="font-mono text-xs text-muted">
-            Portfolio Design System — Preview v1.0
+          <p className="mt-8 text-sm text-muted">
+            Project cards are coming in the next commit.
           </p>
         </div>
       </section>

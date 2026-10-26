@@ -8,6 +8,7 @@ export type Project = {
   liveUrl: string;
   githubUrl: string;
   featured: boolean;
+  backendGithubUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -46,6 +47,7 @@ export const projects: Project[] = [
     liveUrl: "https://zap-shift-mj.vercel.app/",
     githubUrl: "https://github.com/jonaedjoshim/zap-shift-client.git",
     featured: true,
+    backendGithubUrl: "https://github.com/jonaedjoshim/zap-shift-server.git",
   },
   {
     slug: "noxcodec",
@@ -77,5 +79,7 @@ export const projects: Project[] = [
     liveUrl: "https://tuition-finder.vercel.app/",
     githubUrl: "https://github.com/jonaedjoshim/tuition-finder-client.git",
     featured: false,
+    backendGithubUrl:
+      "https://github.com/jonaedjoshim/tuition-finder-server.git",
   },
 ];

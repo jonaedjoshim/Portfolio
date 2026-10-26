@@ -1,0 +1,96 @@
+{
+  "gradepilot": {
+    "tagline": "Making academic results easier to understand.",
+    "overview": "GradePilot is a personal full-stack project designed to help students calculate and organize academic results. It started as a GPA and CGPA calculator inspired by the difficulty of working through university grading rules manually, and gradually evolved into an application with authentication, saved results, and academic insights.",
+    "features": [
+      "GPA and CGPA calculation",
+      "Academic result organization",
+      "User authentication with Better Auth",
+      "Saving and revisiting results",
+      "Performance insights",
+      "Export options for sharing results"
+    ],
+    "challenges": [
+      "Integrating Better Auth into the frontend and backend required significant debugging and a better understanding of authentication flows.",
+      "Translating academic grading rules into reliable calculation logic required careful research and iteration.",
+      "Keeping result-related interfaces understandable while introducing more features was an ongoing design consideration."
+    ],
+    "improvements": [
+      "Explore adding academic schedules and routine-management features.",
+      "Improve calculation validation and edge-case handling.",
+      "Continue refining accessibility and the mobile experience."
+    ],
+    "role": "Personal project",
+    "status": "Personal learning project"
+  },
+  "zapshift": {
+    "tagline": "Exploring the systems behind parcel delivery.",
+    "overview": "ZapShift is a full-stack parcel delivery and logistics management project built as part of my web development learning journey. It explores how authentication, database operations, location-based interfaces, and delivery-related workflows can work together in a larger application.",
+    "features": [
+      "Firebase-based authentication",
+      "Parcel and delivery-related workflows",
+      "MongoDB-backed application data",
+      "Role-oriented application interfaces",
+      "Location-based UI using React Leaflet"
+    ],
+    "challenges": [
+      "Connecting frontend features with backend APIs and database operations.",
+      "Understanding how different user roles affect the application structure.",
+      "Working with location-based interfaces and delivery-related data."
+    ],
+    "improvements": [
+      "Expand delivery tracking functionality.",
+      "Refine role-based workflows and validation.",
+      "Improve performance and usability across devices."
+    ],
+    "role": "Learning project",
+    "status": "Portfolio project"
+  },
+  "noxcodec": {
+    "tagline": "A terminal-inspired way to explore Morse code.",
+    "overview": "NoxCodec is a frontend Morse code encoder and decoder inspired by my curiosity about Morse communication. The project combines a terminal-inspired visual style with interactive text conversion and audio feedback, making the experience both practical and enjoyable.",
+    "features": [
+      "Text-to-Morse encoding",
+      "Morse-to-text decoding",
+      "Real-time conversion",
+      "Audio playback for Morse signals",
+      "Copy and share functionality",
+      "Responsive terminal-inspired interface"
+    ],
+    "challenges": [
+      "Handling Morse code conversion in both directions while keeping interactions intuitive.",
+      "Coordinating audio feedback with dot-and-dash sequences.",
+      "Balancing a terminal-inspired appearance with readability and usability."
+    ],
+    "improvements": [
+      "Explore a messaging experience built around Morse code.",
+      "Add more playback customization.",
+      "Improve keyboard accessibility and input feedback."
+    ],
+    "role": "Personal frontend project",
+    "status": "Portfolio project"
+  },
+  "tuition-finder": {
+    "tagline": "Exploring a platform for finding tutors and tuition opportunities.",
+    "overview": "Tuition Finder began from a local client inquiry and evolved from an initially simple frontend concept toward a full-stack application. The requirements changed during development, and the project was not completed or delivered as a paid client engagement. It remains an unfinished learning project that helped me think more carefully about defining requirements and managing scope.",
+    "features": [
+      "React-based frontend interface",
+      "Firebase authentication integration",
+      "Backend API development with Express",
+      "MongoDB data integration",
+      "Tuition and tutor discovery concept"
+    ],
+    "challenges": [
+      "Adapting to changing requirements as the proposed scope expanded from frontend data to full-stack functionality.",
+      "Planning application structure before requirements were fully clarified.",
+      "Learning the importance of scope definition and clear communication in client-oriented work."
+    ],
+    "improvements": [
+      "Clarify and finalize the intended feature set.",
+      "Complete and verify the main tuition discovery workflows.",
+      "Improve form validation, error handling, and responsive usability."
+    ],
+    "role": "Client-initiated, unfinished project",
+    "status": "Incomplete"
+  }
+}

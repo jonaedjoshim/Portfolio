@@ -1,22 +1,6 @@
-import {
-  Braces,
-  Code2,
-  Database,
-  Layers3,
-  Server,
-  Wrench,
-  ArrowUpRight,
-} from "lucide-react";
-
-import skillsData from "@/data/skills.json";
-
-const categoryIcons: Record<string, typeof Code2> = {
-  languages: Braces,
-  frontend: Layers3,
-  backend: Server,
-  databases: Database,
-  tools: Wrench,
-};
+import { ArrowUpRight, Code2 } from "lucide-react";
+import { skillCategories, currentlyLearning } from "@/data/skills";
+import SkillItem from "./skills-item";
 
 export default function SkillsSection() {
   return (
@@ -26,98 +10,67 @@ export default function SkillsSection() {
       className="scroll-mt-24 border-t border-border py-24 sm:py-32"
     >
       <div className="container-custom">
-        {/* SECTION HEADING */}
-        <div className="mb-12 max-w-2xl">
-          <p className="mb-3 font-mono text-sm text-accent">
-            Technical Toolkit
-          </p>
+        <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
+          {/* SECTION INTRO */}
+          <div>
+            <p className="mb-3 font-mono text-sm text-accent">
+              Technical Toolkit
+            </p>
 
-          <h2
-            id="skills-heading"
-            className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
-          >
-            Skills &amp; Technologies
-          </h2>
+            <h2
+              id="skills-heading"
+              className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+            >
+              Skills &amp; Technologies
+            </h2>
 
-          <p className="mt-4 text-base leading-7 text-muted">
-            Technologies I&apos;ve used while building projects, solving
-            problems, and exploring different areas of software development.
-          </p>
-        </div>
+            <p className="mt-5 max-w-md text-base leading-8 text-muted">
+              Technologies I&apos;ve used while building applications, solving
+              problems, and learning software development.
+            </p>
 
-        {/* SKILL CATEGORIES */}
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {skillsData.categories.map((category) => {
-            const Icon = categoryIcons[category.id] ?? Code2;
+            {/* CURRENTLY LEARNING */}
+            <div className="mt-9 rounded-xl border border-accent/20 bg-accent/5 p-6">
+              <div className="flex items-center gap-2 text-accent">
+                <ArrowUpRight size={19} aria-hidden="true" />
 
-            return (
-              <article
-                key={category.id}
-                className="rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/35 sm:p-7"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                  <Icon size={23} aria-hidden="true" />
-                </div>
+                <h3 className="text-sm font-semibold">Currently Learning</h3>
+              </div>
 
-                <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground">
+              <div className="mt-4 flex flex-wrap gap-2">
+                {currentlyLearning.map((skill) => (
+                  <SkillItem key={skill.name} skill={skill} />
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-6 flex items-start gap-2 text-xs leading-6 text-muted">
+              <Code2
+                size={15}
+                aria-hidden="true"
+                className="mt-1 shrink-0 text-accent"
+              />
+              Always learning, building, and improving.
+            </p>
+          </div>
+
+          {/* SKILL CATEGORIES */}
+          <div className="space-y-9">
+            {skillCategories.map((category) => (
+              <div key={category.id}>
+                <h3 className="mb-4 text-sm font-semibold tracking-wide text-foreground">
                   {category.title}
                 </h3>
 
-                <p className="mt-2 min-h-12 text-sm leading-6 text-muted">
-                  {category.description}
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2.5">
                   {category.skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="rounded-lg border border-border bg-surface-secondary px-3 py-2 text-xs font-medium text-foreground transition-colors hover:border-accent/30"
-                    >
-                      {skill}
-                    </span>
+                    <SkillItem key={skill.name} skill={skill} />
                   ))}
                 </div>
-              </article>
-            );
-          })}
-
-          {/* CURRENTLY LEARNING */}
-          <article className="rounded-2xl border border-accent/25 bg-accent/5 p-6 sm:p-7">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-              <ArrowUpRight size={23} aria-hidden="true" />
-            </div>
-
-            <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground">
-              Currently Learning
-            </h3>
-
-            <p className="mt-2 text-sm leading-6 text-muted">
-              Areas I&apos;m actively working to improve.
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-2">
-              {skillsData.currentlyLearning.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-lg border border-accent/20 bg-background px-3 py-2 text-xs font-medium text-accent"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </article>
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/* LEARNING NOTE */}
-        <p className="mt-8 flex items-start gap-2 text-sm leading-6 text-muted">
-          <Code2
-            size={17}
-            aria-hidden="true"
-            className="mt-0.5 shrink-0 text-accent"
-          />
-          I focus on practical understanding and continuous improvement rather
-          than assigning percentage-based proficiency scores.
-        </p>
       </div>
     </section>
   );

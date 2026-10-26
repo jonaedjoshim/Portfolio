@@ -1,0 +1,49 @@
+{
+  "intro": "I'm Jonaed, a web developer and competitive programmer from Bangladesh. I enjoy building practical web applications, exploring how software works, and improving the way I approach problems.",
+  "summary": "My journey started in 2022 with Python basics on a mobile phone. What began as curiosity about software, games, and cybersecurity gradually led me toward web development, C++, data structures, algorithms, and competitive programming.",
+  "focus": "I currently enjoy frontend development the most, especially turning an idea into an interface that feels clear and useful. I also like working through authentication flows and understanding how frontend and backend systems connect.",
+  "approach": "I learn through documentation, courses, experimentation, and AI-assisted development. I try to understand and review what I implement instead of relying on generated suggestions without checking them.",
+  "journey": [
+    {
+      "period": "2022",
+      "title": "Curiosity Turned Into Code",
+      "description": "Started learning Python basics on a mobile phone while exploring how software, games, and security-related systems work."
+    },
+    {
+      "period": "2025",
+      "title": "Discovering Web Development",
+      "description": "Moved toward HTML, CSS, JavaScript, and React to understand how interactive websites and applications are built."
+    },
+    {
+      "period": "2026",
+      "title": "Strengthening Problem-Solving Skills",
+      "description": "Began studying C++, data structures, and algorithms while participating in competitive programming."
+    },
+    {
+      "period": "Now",
+      "title": "Building and Improving",
+      "description": "Working on full-stack projects, improving frontend development skills, and continuing to practice algorithmic problem solving."
+    }
+  ],
+  "interests": [
+    {
+      "title": "Web Development",
+      "description": "Building responsive, practical interfaces and understanding the systems that support them."
+    },
+    {
+      "title": "Competitive Programming",
+      "description": "Practicing algorithms and learning to approach challenging problems with clearer reasoning."
+    },
+    {
+      "title": "Cybersecurity",
+      "description": "Exploring security concepts out of curiosity, with an interest in learning more deeply in the future."
+    },
+    {
+      "title": "Continuous Learning",
+      "description": "Exploring ideas across software engineering, data engineering, and technology."
+    }
+  ],
+  "beyondCode": "Outside programming, I'm curious about psychology, history, law, and how people think. I enjoy gaming, observing nature, and photographing the sky and moon. These interests help me stay curious beyond the screen.",
+  "career": "I'm looking for opportunities to grow through internships, junior development roles, meaningful collaborations, and suitable freelance projects. My long-term goal is to become a capable software engineer with strong development and problem-solving foundations.",
+  "location": "Shahzadpur, Sirajganj, Bangladesh"
+}

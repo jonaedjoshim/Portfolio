@@ -127,7 +127,7 @@ export default async function ProjectStoryPage({ params }: PageProps) {
 
       {/* STORY CONTENT */}
       <article className="container-custom py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-5xl">
           <div className="space-y-14">
             {story.sections.map((section, index) => (
               <section

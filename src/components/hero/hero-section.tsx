@@ -124,8 +124,8 @@ export default function HeroSection() {
           </div>
 
           {/* PROFILE VISUAL */}
-          <div className="relative mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[420px]">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-surface-secondary">
+          <div className="relative mx-auto w-full max-w-85 sm:max-w-95 lg:max-w-105">
+            <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-border bg-surface-secondary">
               <div
                 aria-label="Profile photograph placeholder"
                 role="img"
@@ -167,7 +167,7 @@ export default function HeroSection() {
       {/* SCROLL INDICATOR */}
       <div className="container-custom relative z-10 flex justify-center pb-7 sm:pb-9">
         <a
-          href="#hero-next"
+          href="#featured-projects"
           aria-label="Scroll to the next section"
           className="group inline-flex flex-col items-center gap-2 text-muted transition-colors hover:text-accent"
         >

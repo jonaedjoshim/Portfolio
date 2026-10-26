@@ -1,0 +1,42 @@
+{
+  "education": [
+    {
+      "id": "bba",
+      "degree": "Bachelor of Business Administration (BBA)",
+      "field": "Accounting",
+      "institution": "Govt. Akbor Ali College",
+      "university": "National University, Bangladesh",
+      "period": "2023 – Present",
+      "status": "Ongoing",
+      "description": "Currently pursuing an undergraduate degree in Accounting while independently developing programming and software development skills."
+    },
+    {
+      "id": "hsc",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "field": "Science",
+      "institution": "Savar Govt. College",
+      "university": "",
+      "period": "2021 – 2022",
+      "status": "Completed",
+      "description": "Completed higher secondary education in the Science group."
+    }
+  ],
+  "technicalLearning": [
+    {
+      "id": "programming-hero",
+      "name": "Complete Web Development",
+      "provider": "Programming Hero",
+      "batch": "Batch 14",
+      "status": "In Progress",
+      "focus": "Frontend development, React, full-stack application development, and practical projects."
+    },
+    {
+      "id": "phitron",
+      "name": "CSE Fundamentals",
+      "provider": "Phitron",
+      "batch": "Batch 09",
+      "status": "In Progress",
+      "focus": "Programming fundamentals, C++, data structures, algorithms, and problem solving."
+    }
+  ]
+}

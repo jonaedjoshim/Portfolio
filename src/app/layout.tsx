@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import Navbar from "@/components/layout/navbar";
 import "./globals.css";
+
+// FONTS
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,6 +17,8 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+
+// SEO METADATA
 
 export const metadata: Metadata = {
   title: {
@@ -35,6 +40,8 @@ export const metadata: Metadata = {
   creator: "Md Jonaed Joshim",
 };
 
+// ROOT LAYOUT
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,6 +58,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

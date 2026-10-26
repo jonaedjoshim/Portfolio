@@ -1,15 +1,9 @@
-import ThemeToggle from "@/components/ui/theme-toggle";
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      {/* THEME TOGGLE */}
-      <div className="container-custom flex justify-end pt-6">
-        <ThemeToggle />
-      </div>
-
       {/* HERO PREVIEW */}
-      <section className="container-custom flex min-h-[calc(100svh-92px)] flex-col justify-center py-20">
+
+      <section className="container-custom flex min-h-[calc(100svh-4.5rem)] flex-col justify-center py-20">
         <div className="max-w-3xl">
           <p className="mb-5 font-mono text-sm tracking-widest text-accent uppercase">
             Web Developer & Competitive Programmer
@@ -24,6 +18,8 @@ export default function Home() {
             continuously explore better ways to turn ideas into working
             software.
           </p>
+
+          {/* HERO ACTIONS */}
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
@@ -45,6 +41,7 @@ export default function Home() {
         </div>
 
         {/* PREVIEW FOOTER */}
+
         <div className="mt-20 border-t border-border pt-6">
           <p className="font-mono text-xs text-muted">
             Portfolio Design System — Preview v1.0

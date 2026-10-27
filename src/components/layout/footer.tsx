@@ -6,6 +6,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import MyLogo from "../ui/my-logo";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -42,9 +43,7 @@ export default function Footer() {
               className="inline-flex items-center gap-2.5 text-lg font-semibold tracking-tight text-foreground"
               aria-label="Md Jonaed Joshim — Home"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-accent/25 bg-accent/10 font-mono text-sm font-bold text-accent">
-                MJ
-              </span>
+              <MyLogo size={40} />
 
               <span>Jonaed Joshim</span>
             </Link>

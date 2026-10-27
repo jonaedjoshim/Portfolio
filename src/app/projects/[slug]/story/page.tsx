@@ -14,6 +14,7 @@ import {
 import { projects } from "@/data/projects";
 import projectStories from "@/data/project-stories.json";
 import { siteConfig } from "@/lib/seo";
+import MyLogo from "@/components/ui/my-logo";
 
 type StorySection = {
   heading: string;
@@ -155,9 +156,7 @@ async function ProjectStoryContent({ params }: PageProps) {
           </p>
 
           <div className="mt-9 flex items-center gap-3 border-t border-border pt-6">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/10 font-mono text-sm font-bold text-accent">
-              MJ
-            </div>
+            <MyLogo size={40} />
 
             <div>
               <p className="text-sm font-semibold text-foreground">

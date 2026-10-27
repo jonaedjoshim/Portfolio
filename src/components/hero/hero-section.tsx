@@ -1,8 +1,9 @@
 import Link from "next/link";
 import {
   ArrowDown,
-  ArrowDownRight,
   ArrowUpRight,
+  Download,
+  ExternalLink,
   Code2,
   BriefcaseBusiness,
   Mail,
@@ -10,6 +11,8 @@ import {
 } from "lucide-react";
 
 import InteractiveBackground from "./interactive-background";
+
+const resumeUrl = "/resume/md-jonaed-joshim-resume.pdf";
 
 const socialLinks = [
   {
@@ -80,15 +83,26 @@ export default function HeroSection() {
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 Explore My Work
-                <ArrowUpRight size={17} />
+                <ArrowUpRight size={17} aria-hidden="true" />
               </Link>
 
               <a
-                href="mailto:mdjonaedjoshim@gmail.com?subject=Resume%20Request"
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-border bg-surface/85 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                Request Resume
-                <ArrowDownRight size={17} />
+                View Resume
+                <ExternalLink size={17} aria-hidden="true" />
+              </a>
+
+              <a
+                href={resumeUrl}
+                download="Md-Jonaed-Joshim-Resume.pdf"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-border bg-surface/85 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              >
+                Download Resume
+                <Download size={17} aria-hidden="true" />
               </a>
             </div>
 
@@ -103,7 +117,7 @@ export default function HeroSection() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${social.label} (opens in new tab)`}
+                    aria-label={`${social.label} (opens in a new tab)`}
                     className="inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-accent"
                   >
                     <Icon size={19} aria-hidden="true" />

@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTheme } from "next-themes";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 import ThemeToggle from "@/components/ui/theme-toggle";
 import ScrollProgress from "@/components/ui/scroll-progress";
+import MyLogo from "../ui/my-logo";
 
 // NAVIGATION LINKS
 const navLinks = [
@@ -28,26 +27,8 @@ function isActiveLink(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-// HYDRATION-SAFE MOUNT CHECK
-const subscribe = () => () => {};
-
-function getClientSnapshot() {
-  return true;
-}
-
-function getServerSnapshot() {
-  return false;
-}
-
 export default function Navbar() {
   const pathname = usePathname();
-  const { resolvedTheme } = useTheme();
-
-  const mounted = useSyncExternalStore(
-    subscribe,
-    getClientSnapshot,
-    getServerSnapshot,
-  );
 
   // MOBILE MENU STATE
   const [menuState, setMenuState] = useState({
@@ -56,11 +37,6 @@ export default function Navbar() {
   });
 
   const isMenuOpen = menuState.isOpen && menuState.pathname === pathname;
-
-  const logoSrc =
-    mounted && resolvedTheme === "dark"
-      ? "/logo/logo-dark.svg"
-      : "/logo/logo-light.svg";
 
   // EVENT HANDLERS
   const toggleMenu = () => {
@@ -126,16 +102,7 @@ export default function Navbar() {
           aria-label="Md Jonaed Joshim — Home"
           className="flex shrink-0 items-center gap-2.5"
         >
-          <span className="relative block h-10 w-10">
-            <Image
-              src={logoSrc}
-              alt=""
-              fill
-              sizes="40px"
-              priority
-              className="object-contain"
-            />
-          </span>
+          <MyLogo size={40} />
 
           <span className="hidden text-sm font-semibold tracking-tight text-foreground sm:inline">
             Md Jonaed Joshim

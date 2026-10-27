@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import {
   ArrowDown,
   ArrowUpRight,
@@ -140,33 +142,22 @@ export default function HeroSection() {
           {/* PROFILE VISUAL */}
           <div className="relative mx-auto w-full max-w-85 sm:max-w-95 lg:max-w-105">
             <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-border bg-surface-secondary">
-              <div
-                aria-label="Profile photograph placeholder"
-                role="img"
-                className="flex h-full w-full flex-col items-center justify-center gap-5"
-              >
-                <div className="flex h-28 w-28 items-center justify-center rounded-2xl border border-accent/25 bg-accent/10 sm:h-32 sm:w-32">
-                  <span className="font-mono text-5xl font-bold tracking-tight text-accent sm:text-6xl">
-                    MJ
-                  </span>
-                </div>
-
-                <div className="text-center">
-                  <p className="text-sm font-semibold text-foreground">
-                    Md Jonaed Joshim
-                  </p>
-
-                  <p className="mt-1 font-mono text-xs text-muted">
-                    Photo coming soon
-                  </p>
-                </div>
-              </div>
+              <Image
+                src="/images/profile.webp"
+                alt="Professional portrait of Md Jonaed Joshim"
+                fill
+                priority
+                sizes="(max-width: 640px) 340px, (max-width: 1024px) 380px, 420px"
+                className="object-cover object-center"
+              />
 
               {/* CORNER DETAILS */}
-              <span className="absolute top-5 left-5 h-7 w-7 border-t border-l border-accent/50" />
-              <span className="absolute right-5 bottom-5 h-7 w-7 border-r border-b border-accent/50" />
+              <span className="pointer-events-none absolute top-5 left-5 h-7 w-7 border-t border-l border-accent/50" />
+
+              <span className="pointer-events-none absolute right-5 bottom-5 h-7 w-7 border-r border-b border-accent/50" />
             </div>
 
+            {/* LOCATION BADGE */}
             <div className="absolute -right-3 -bottom-5 flex items-center gap-2 rounded-xl border border-border bg-surface px-4 py-3 shadow-sm sm:-right-6">
               <MapPin size={16} className="text-accent" aria-hidden="true" />
 

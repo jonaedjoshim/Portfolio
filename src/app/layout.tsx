@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import Navbar from "@/components/layout/navbar";
-import "./globals.css";
-import { Toaster } from "sonner";
 import Footer from "@/components/layout/footer";
 import BackToTop from "@/components/ui/back-to-top";
+import ScrollReveal from "@/components/ui/scroll-reveal";
+import { Toaster } from "sonner";
+
+import "./globals.css";
 
 // FONTS
 
@@ -61,10 +63,23 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* SKIP NAVIGATION */}
+          <a href="#main-content" className="skip-to-content">
+            Skip to main content
+          </a>
+
           <Navbar />
-          <main id="main-content">{children}</main>
+
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
+
           <Footer />
+
           <BackToTop />
+
+          <ScrollReveal />
+
           <Toaster position="bottom-right" richColors closeButton />
         </ThemeProvider>
       </body>

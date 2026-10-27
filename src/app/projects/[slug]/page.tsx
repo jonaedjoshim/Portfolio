@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 import {
   ArrowLeft,
@@ -63,7 +64,36 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProjectDetailsPage({ params }: PageProps) {
+// LOADING FALLBACK
+function ProjectDetailsLoading() {
+  return (
+    <div className="container-custom min-h-[60vh] py-16" role="status">
+      <span className="sr-only">Loading project details...</span>
+
+      <div
+        aria-hidden="true"
+        className="animate-pulse motion-reduce:animate-none"
+      >
+        <div className="h-4 w-32 rounded bg-surface-secondary" />
+        <div className="mt-12 h-12 w-64 rounded bg-surface-secondary" />
+        <div className="mt-5 h-5 max-w-xl rounded bg-surface-secondary" />
+        <div className="mt-10 aspect-video w-full rounded-2xl bg-surface-secondary" />
+      </div>
+    </div>
+  );
+}
+
+// PAGE
+export default function ProjectDetailsPage({ params }: PageProps) {
+  return (
+    <Suspense fallback={<ProjectDetailsLoading />}>
+      <ProjectDetailsContent params={params} />
+    </Suspense>
+  );
+}
+
+// PROJECT CONTENT
+async function ProjectDetailsContent({ params }: PageProps) {
   const { slug } = await params;
 
   const project = projects.find((item) => item.slug === slug);
@@ -74,7 +104,7 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* PAGE HEADER */}
       <section className="border-b border-border bg-surface/40">
         <div className="container-custom py-12 sm:py-16">
@@ -371,6 +401,6 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
           </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

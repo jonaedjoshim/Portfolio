@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 import {
   ArrowLeft,
@@ -47,7 +48,6 @@ export async function generateMetadata({
   const { slug } = await params;
 
   const project = projects.find((item) => item.slug === slug);
-
   const story = stories[slug];
 
   if (!project || !story) {
@@ -62,11 +62,45 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProjectStoryPage({ params }: PageProps) {
+// LOADING FALLBACK
+function ProjectStoryLoading() {
+  return (
+    <div className="container-custom min-h-[60vh] py-16" role="status">
+      <span className="sr-only">Loading project story...</span>
+
+      <div
+        aria-hidden="true"
+        className="animate-pulse motion-reduce:animate-none"
+      >
+        <div className="h-4 w-36 rounded bg-surface-secondary" />
+        <div className="mt-12 h-12 max-w-xl rounded bg-surface-secondary" />
+        <div className="mt-5 h-5 max-w-2xl rounded bg-surface-secondary" />
+
+        <div className="mt-16 space-y-5">
+          <div className="h-7 w-48 rounded bg-surface-secondary" />
+          <div className="h-4 max-w-4xl rounded bg-surface-secondary" />
+          <div className="h-4 max-w-3xl rounded bg-surface-secondary" />
+          <div className="h-4 max-w-2xl rounded bg-surface-secondary" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// PAGE
+export default function ProjectStoryPage({ params }: PageProps) {
+  return (
+    <Suspense fallback={<ProjectStoryLoading />}>
+      <ProjectStoryContent params={params} />
+    </Suspense>
+  );
+}
+
+// STORY CONTENT
+async function ProjectStoryContent({ params }: PageProps) {
   const { slug } = await params;
 
   const project = projects.find((item) => item.slug === slug);
-
   const story = stories[slug];
 
   if (!project || !story) {
@@ -74,7 +108,7 @@ export default async function ProjectStoryPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* STORY HEADER */}
       <section className="border-b border-border bg-surface/40">
         <div className="container-custom py-12 sm:py-16 lg:py-20">
@@ -197,6 +231,6 @@ export default async function ProjectStoryPage({ params }: PageProps) {
           </Link>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

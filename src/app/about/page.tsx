@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageSeo } from "@/lib/seo";
 import Link from "next/link";
 
 import {
@@ -15,9 +16,16 @@ import {
 import about from "@/data/about.json";
 
 export const metadata: Metadata = {
-  title: "About | Md Jonaed Joshim",
-  description:
-    "Learn about Md Jonaed Joshim's programming journey, interests, development approach, and career goals.",
+  title: pageSeo.about.title,
+  description: pageSeo.about.description,
+  alternates: {
+    canonical: pageSeo.about.path,
+  },
+  openGraph: {
+    title: pageSeo.about.title,
+    description: pageSeo.about.description,
+    url: pageSeo.about.path,
+  },
 };
 
 const interestIcons = [Code2, Brain, Compass, BookOpen];

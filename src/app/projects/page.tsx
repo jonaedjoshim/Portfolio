@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
+import { pageSeo } from "@/lib/seo";
 
 import ProjectsExplorer from "@/components/projects/projects-explorer";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Projects | Md Jonaed Joshim",
-  description:
-    "Explore web development projects by Md Jonaed Joshim, including GradePilot, ZapShift, NoxCodec, and Tuition Finder.",
+  title: pageSeo.projects.title,
+  description: pageSeo.projects.description,
+  alternates: {
+    canonical: pageSeo.projects.path,
+  },
+  openGraph: {
+    title: pageSeo.projects.title,
+    description: pageSeo.projects.description,
+    url: pageSeo.projects.path,
+  },
 };
 
 export default function ProjectsPage() {

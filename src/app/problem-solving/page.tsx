@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageSeo } from "@/lib/seo";
 
 import {
   ArrowUpRight,
@@ -12,9 +13,16 @@ import PlatformCard from "@/components/problem-solving/plaform-card";
 import problemSolving from "@/data/problem-solving.json";
 
 export const metadata: Metadata = {
-  title: "Problem Solving | Md Jonaed Joshim",
-  description:
-    "Explore Md Jonaed Joshim's competitive programming journey, coding profiles, and problem-solving interests.",
+  title: pageSeo.problemSolving.title,
+  description: pageSeo.problemSolving.description,
+  alternates: {
+    canonical: pageSeo.problemSolving.path,
+  },
+  openGraph: {
+    title: pageSeo.problemSolving.title,
+    description: pageSeo.problemSolving.description,
+    url: pageSeo.problemSolving.path,
+  },
 };
 
 export default function ProblemSolvingPage() {

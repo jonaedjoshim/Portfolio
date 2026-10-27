@@ -24,13 +24,21 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
       {/* CERTIFICATE PREVIEW */}
       <div className="relative aspect-16/10 overflow-hidden border-b border-border bg-surface-secondary">
         {isPdf ? (
-          <iframe
-            src={`${certificate.file}#page=1&toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-            title={`${certificate.title} certificate preview`}
-            loading="lazy"
-            tabIndex={-1}
-            className="pointer-events-none h-full w-full border-0"
-          />
+          <div className="flex h-full w-full items-center justify-center p-6">
+            <div className="flex w-full max-w-48 flex-col items-center rounded-xl border border-border bg-surface px-5 py-6 text-center shadow-sm">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                <FileText size={28} strokeWidth={1.6} aria-hidden="true" />
+              </div>
+
+              <span className="mt-4 font-mono text-xs font-semibold tracking-widest text-accent">
+                PDF CERTIFICATE
+              </span>
+
+              <span className="mt-2 line-clamp-2 text-xs leading-5 text-muted">
+                {certificate.issuer}
+              </span>
+            </div>
+          </div>
         ) : (
           <Image
             src={certificate.file}
@@ -41,6 +49,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
           />
         )}
 
+        {/* FEATURED BADGE */}
         {certificate.featured && (
           <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-md border border-accent/20 bg-surface/95 px-2.5 py-1.5 text-xs font-semibold text-accent">
             <Award size={14} aria-hidden="true" />
@@ -72,7 +81,9 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
             className="inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors hover:text-accent"
           >
             <FileText size={16} aria-hidden="true" />
+
             {isPdf ? "View PDF" : "View Certificate"}
+
             <ArrowUpRight size={15} aria-hidden="true" />
           </a>
 

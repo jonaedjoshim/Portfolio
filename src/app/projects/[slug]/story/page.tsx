@@ -13,6 +13,7 @@ import {
 
 import { projects } from "@/data/projects";
 import projectStories from "@/data/project-stories.json";
+import { siteConfig } from "@/lib/seo";
 
 type StorySection = {
   heading: string;
@@ -53,12 +54,24 @@ export async function generateMetadata({
   if (!project || !story) {
     return {
       title: "Story Not Found",
+      robots: { index: false, follow: false },
     };
   }
 
   return {
-    title: `${story.title} | Md Jonaed Joshim`,
+    title: story.title,
     description: story.subtitle,
+
+    alternates: {
+      canonical: `/projects/${slug}/story`,
+    },
+
+    openGraph: {
+      title: `${story.title} | ${siteConfig.name}`,
+      description: story.subtitle,
+      url: `/projects/${slug}/story`,
+      type: "article",
+    },
   };
 }
 

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/footer";
 import BackToTop from "@/components/ui/back-to-top";
 import ScrollReveal from "@/components/ui/scroll-reveal";
 import { Toaster } from "sonner";
+import { siteConfig } from "@/lib/seo";
 
 import "./globals.css";
 
@@ -26,23 +27,59 @@ const jetbrainsMono = JetBrains_Mono({
 // SEO METADATA
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+
   title: {
-    default: "Md Jonaed Joshim | Web Developer & Competitive Programmer",
-    template: "%s | Md Jonaed Joshim",
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
   },
-  description:
-    "Portfolio of Md Jonaed Joshim, a web developer and competitive programmer focused on building practical applications and solving problems.",
+
+  description: siteConfig.description,
+
+  applicationName: siteConfig.name,
+
   keywords: [
     "Md Jonaed Joshim",
     "Jonaed Joshim",
     "Web Developer",
     "Competitive Programmer",
     "React Developer",
-    "MERN Stack Developer",
+    "Full Stack Developer",
     "Bangladesh",
   ],
-  authors: [{ name: "Md Jonaed Joshim" }],
-  creator: "Md Jonaed Joshim",
+
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 // ROOT LAYOUT

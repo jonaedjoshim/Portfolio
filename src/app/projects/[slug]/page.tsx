@@ -17,6 +17,7 @@ import {
 
 import { projects } from "@/data/projects";
 import projectDetails from "@/data/project-details.json";
+import { siteConfig } from "@/lib/seo";
 
 type ProjectDetails = {
   tagline: string;
@@ -55,12 +56,24 @@ export async function generateMetadata({
   if (!project || !detail) {
     return {
       title: "Project Not Found",
+      robots: { index: false, follow: false },
     };
   }
 
   return {
-    title: `${project.name} | Md Jonaed Joshim`,
+    title: project.name,
     description: detail.overview,
+
+    alternates: {
+      canonical: `/projects/${slug}`,
+    },
+
+    openGraph: {
+      title: `${project.name} | ${siteConfig.name}`,
+      description: detail.overview,
+      url: `/projects/${slug}`,
+      type: "article",
+    },
   };
 }
 

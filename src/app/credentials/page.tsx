@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
+import { pageSeo } from "@/lib/seo";
 import { Award, BookOpen } from "lucide-react";
 
 import CredentialsExplorer from "@/components/credentials/credentials-explorer";
 import certificates from "@/data/certificates.json";
 
 export const metadata: Metadata = {
-  title: "Credentials | Md Jonaed Joshim",
-  description:
-    "Explore courses, skill assessments, and learning credentials earned by Md Jonaed Joshim.",
+  title: pageSeo.credentials.title,
+  description: pageSeo.credentials.description,
+  alternates: {
+    canonical: pageSeo.credentials.path,
+  },
+  openGraph: {
+    title: pageSeo.credentials.title,
+    description: pageSeo.credentials.description,
+    url: pageSeo.credentials.path,
+  },
 };
 
 export default function CredentialsPage() {

@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import Navbar from "@/components/layout/navbar";
 import "./globals.css";
 import { Toaster } from "sonner";
+import Footer from "@/components/layout/footer";
+import BackToTop from "@/components/ui/back-to-top";
 
 // FONTS
 
@@ -60,7 +62,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <main id="main-content">{children}</main>
+          <Footer />
+          <BackToTop />
           <Toaster position="bottom-right" richColors closeButton />
         </ThemeProvider>
       </body>

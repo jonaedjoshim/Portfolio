@@ -1,0 +1,192 @@
+[
+  {
+    "id": "hackerrank-problem-solving",
+    "title": "Problem Solving (Basic)",
+    "issuer": "HackerRank",
+    "date": "May 18, 2026",
+    "category": "Programming",
+    "file": "/certificates/hackerrank-problem-solving.pdf",
+    "verificationUrl": "",
+    "featured": true
+  },
+  {
+    "id": "hackerrank-react",
+    "title": "Frontend Developer (React)",
+    "issuer": "HackerRank",
+    "date": "April 9, 2026",
+    "category": "Web Development",
+    "file": "/certificates/hackerrank-react.pdf",
+    "verificationUrl": "",
+    "featured": true
+  },
+  {
+    "id": "freecodecamp-responsive-web-design",
+    "title": "Responsive Web Design",
+    "issuer": "freeCodeCamp",
+    "date": "January 9, 2026",
+    "category": "Web Development",
+    "file": "/certificates/freecodecamp-responsive-web-design.png",
+    "verificationUrl": "https://www.freecodecamp.org/certification/jonaed-joshim/responsive-web-design-v9",
+    "featured": true
+  },
+  {
+    "id": "mongodb-crud",
+    "title": "CRUD Operations in MongoDB",
+    "issuer": "MongoDB",
+    "date": "February 25, 2026",
+    "category": "Database",
+    "file": "/certificates/mongodb-crud.pdf",
+    "verificationUrl": "https://www.credly.com/badges/0f33b62d-c203-4d7f-aa8b-7be4228f25ea",
+    "featured": true
+  },
+  {
+    "id": "google-gemini-student",
+    "title": "Gemini Certified Student",
+    "issuer": "Google for Education",
+    "date": "2026",
+    "category": "AI & Tools",
+    "file": "/certificates/google-gemini-student.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "google-gemini-educator",
+    "title": "Gemini Certified Educator",
+    "issuer": "Google for Education",
+    "date": "January 1, 2026",
+    "category": "AI & Tools",
+    "file": "/certificates/google-gemini-educator.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "simplilearn-prompt-engineering",
+    "title": "Introduction to Prompt Engineering with GitHub Copilot",
+    "issuer": "Simplilearn SkillUp",
+    "date": "January 2, 2026",
+    "category": "AI & Tools",
+    "file": "/certificates/simplilearn-prompt-engineering.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "simplilearn-cybercrime",
+    "title": "Introduction to Cybercrime",
+    "issuer": "Simplilearn SkillUp",
+    "date": "January 3, 2026",
+    "category": "Cybersecurity",
+    "file": "/certificates/simplilearn-cybercrime.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "simplilearn-cyber-security",
+    "title": "Introduction to Cyber Security",
+    "issuer": "Simplilearn SkillUp",
+    "date": "January 3, 2026",
+    "category": "Cybersecurity",
+    "file": "/certificates/simplilearn-cyber-security.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "simplilearn-chatgpt-cybersecurity",
+    "title": "ChatGPT for Cybersecurity",
+    "issuer": "Simplilearn SkillUp",
+    "date": "January 3, 2026",
+    "category": "Cybersecurity",
+    "file": "/certificates/simplilearn-chatgpt-cybersecurity.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "simplilearn-generative-ai-studio",
+    "title": "Introduction to Generative AI Studio",
+    "issuer": "Simplilearn SkillUp",
+    "date": "January 3, 2026",
+    "category": "AI & Tools",
+    "file": "/certificates/simplilearn-generative-ai-studio.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "simplilearn-data-analyst",
+    "title": "Data Analyst 101",
+    "issuer": "Simplilearn SkillUp",
+    "date": "January 3, 2026",
+    "category": "AI & Tools",
+    "file": "/certificates/simplilearn-data-analyst.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "hackfix-online-fraud",
+    "title": "Certified Online Fraud Prevention Specialist",
+    "issuer": "Hack & Fix",
+    "date": "May 22, 2026",
+    "category": "Cybersecurity",
+    "file": "/certificates/hackfix-online-fraud.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "hackfix-phishing",
+    "title": "Certified Phishing Prevention Specialist",
+    "issuer": "Hack & Fix",
+    "date": "December 30, 2025",
+    "category": "Cybersecurity",
+    "file": "/certificates/hackfix-phishing.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "hackfix-career-starter",
+    "title": "Cybersecurity Career Starter Certification",
+    "issuer": "Hack & Fix",
+    "date": "December 28, 2025",
+    "category": "Cybersecurity",
+    "file": "/certificates/hackfix-career-starter.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "security-blue-team-penetration-testing",
+    "title": "Introduction to Penetration Testing",
+    "issuer": "Security Blue Team",
+    "date": "December 22, 2025",
+    "category": "Cybersecurity",
+    "file": "/certificates/security-blue-team-penetration-testing.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "security-blue-team-dark-web",
+    "title": "Introduction to Dark Web Operations",
+    "issuer": "Security Blue Team",
+    "date": "December 21, 2025",
+    "category": "Cybersecurity",
+    "file": "/certificates/security-blue-team-dark-web.pdf",
+    "verificationUrl": "",
+    "featured": false
+  },
+  {
+    "id": "programming-hero-web-development",
+    "title": "Complete Web Development",
+    "issuer": "Programming Hero (Introductory App Course)",
+    "date": "February 9, 2026",
+    "category": "Web Development",
+    "file": "/certificates/programming-hero-web-development.jpeg",
+    "verificationUrl": "https://app.programming-hero.com/certificates/PH74763",
+    "featured": false
+  },
+  {
+    "id": "programming-hero-react",
+    "title": "React JS Course 2023",
+    "issuer": "Programming Hero (Introductory App Course)",
+    "date": "February 9, 2026",
+    "category": "Web Development",
+    "file": "/certificates/programming-hero-react.jpeg",
+    "verificationUrl": "https://app.programming-hero.com/certificates/PH74772",
+    "featured": false
+  }
+]

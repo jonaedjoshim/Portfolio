@@ -4,6 +4,7 @@ import AboutPreview from "@/components/about/about-preview";
 import SkillsSection from "@/components/skills/skills-section";
 import ProblemSolvingPreview from "@/components/problem-solving/problem-solving-preview";
 import EducationSection from "@/components/education/education-section";
+import CredentialsPreview from "@/components/credentials/credentials-preview";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SkillsSection />
       <ProblemSolvingPreview />
       <EducationSection />
+      <CredentialsPreview />
     </main>
   );
 }

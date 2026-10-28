@@ -20,11 +20,11 @@
       "primary": true
     },
     {
-      "name": "LeetCode",
-      "username": "h6vQHfPlh3",
-      "url": "https://leetcode.com/u/h6vQHfPlh3/",
-      "description": "Data structures, algorithms, and interview-style problems.",
-      "icon": "leetcode.svg",
+      "name": "AtCoder",
+      "username": "md_jonaed_joshim",
+      "url": "https://atcoder.jp/users/md_jonaed_joshim",
+      "description": "Algorithmic contests and programming challenges.",
+      "icon": "atcoder.png",
       "primary": true
     },
     {
@@ -36,11 +36,11 @@
       "primary": true
     },
     {
-      "name": "AtCoder",
-      "username": "md_jonaed_joshim",
-      "url": "https://atcoder.jp/users/md_jonaed_joshim",
-      "description": "Algorithmic contests and programming challenges.",
-      "icon": "atcoder.png",
+      "name": "LeetCode",
+      "username": "h6vQHfPlh3",
+      "url": "https://leetcode.com/u/h6vQHfPlh3/",
+      "description": "Data structures, algorithms, and interview-style problems.",
+      "icon": "leetcode.svg",
       "primary": false
     },
     {

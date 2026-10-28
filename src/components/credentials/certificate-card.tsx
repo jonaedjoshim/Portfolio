@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Award, ExternalLink, FileText } from "lucide-react";
+import { ArrowUpRight, Award, ExternalLink } from "lucide-react";
 
 export type Certificate = {
   id: string;
@@ -7,7 +7,7 @@ export type Certificate = {
   issuer: string;
   date: string;
   category: string;
-  file: string;
+  image: string;
   verificationUrl: string;
   featured: boolean;
 };
@@ -17,52 +17,38 @@ type CertificateCardProps = {
 };
 
 export default function CertificateCard({ certificate }: CertificateCardProps) {
-  const isPdf = certificate.file.toLowerCase().endsWith(".pdf");
-
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-accent/40">
       {/* CERTIFICATE PREVIEW */}
-      <div className="relative aspect-16/10 overflow-hidden border-b border-border bg-surface-secondary">
-        {isPdf ? (
-          <div className="flex h-full w-full items-center justify-center p-6">
-            <div className="flex w-full max-w-48 flex-col items-center rounded-xl border border-border bg-surface px-5 py-6 text-center shadow-sm">
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                <FileText size={28} strokeWidth={1.6} aria-hidden="true" />
-              </div>
-
-              <span className="mt-4 font-mono text-xs font-semibold tracking-widest text-accent">
-                PDF CERTIFICATE
-              </span>
-
-              <span className="mt-2 line-clamp-2 text-xs leading-5 text-muted">
-                {certificate.issuer}
-              </span>
-            </div>
-          </div>
-        ) : (
-          <Image
-            src={certificate.file}
-            alt={`${certificate.title} certificate`}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-            className="object-contain p-3"
-          />
-        )}
+      <a
+        href={certificate.image}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`View ${certificate.title} certificate`}
+        className="relative block aspect-16/10 overflow-hidden border-b border-border bg-surface-secondary"
+      >
+        <Image
+          src={certificate.image}
+          alt={`${certificate.title} certificate issued by ${certificate.issuer}`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          className="object-contain p-3 transition-transform duration-300 group-hover:scale-[1.03]"
+        />
 
         {/* FEATURED BADGE */}
         {certificate.featured && (
-          <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-md border border-accent/20 bg-surface/95 px-2.5 py-1.5 text-xs font-semibold text-accent">
+          <span className="pointer-events-none absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-md border border-accent/20 bg-surface/95 px-2.5 py-1.5 text-xs font-semibold text-accent">
             <Award size={14} aria-hidden="true" />
             Highlighted
           </span>
         )}
-      </div>
+      </a>
 
       {/* CERTIFICATE INFORMATION */}
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <p className="font-mono text-xs text-accent">{certificate.category}</p>
 
-        <h3 className="mt-3 text-base font-bold leading-6 text-foreground">
+        <h3 className="mt-3 text-base leading-6 font-bold text-foreground">
           {certificate.title}
         </h3>
 
@@ -75,15 +61,12 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
         {/* CERTIFICATE ACTIONS */}
         <div className="mt-auto flex flex-wrap gap-4 border-t border-border pt-5">
           <a
-            href={certificate.file}
+            href={certificate.image}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors hover:text-accent"
           >
-            <FileText size={16} aria-hidden="true" />
-
-            {isPdf ? "View PDF" : "View Certificate"}
-
+            View Certificate
             <ArrowUpRight size={15} aria-hidden="true" />
           </a>
 

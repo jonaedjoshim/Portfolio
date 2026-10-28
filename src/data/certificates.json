@@ -5,7 +5,7 @@
     "issuer": "HackerRank",
     "date": "May 18, 2026",
     "category": "Programming",
-    "file": "/certificates/hackerrank-problem-solving.pdf",
+    "image": "/certificates/hackerrank-problem-solving.png",
     "verificationUrl": "",
     "featured": true
   },
@@ -15,7 +15,7 @@
     "issuer": "HackerRank",
     "date": "April 9, 2026",
     "category": "Web Development",
-    "file": "/certificates/hackerrank-react.pdf",
+    "image": "/certificates/hackerrank-react.png",
     "verificationUrl": "",
     "featured": true
   },
@@ -25,7 +25,7 @@
     "issuer": "freeCodeCamp",
     "date": "January 9, 2026",
     "category": "Web Development",
-    "file": "/certificates/freecodecamp-responsive-web-design.png",
+    "image": "/certificates/freecodecamp-responsive-web-design.png",
     "verificationUrl": "https://www.freecodecamp.org/certification/jonaed-joshim/responsive-web-design-v9",
     "featured": true
   },
@@ -35,7 +35,7 @@
     "issuer": "MongoDB",
     "date": "February 25, 2026",
     "category": "Database",
-    "file": "/certificates/mongodb-crud.pdf",
+    "image": "/certificates/mongodb-crud.png",
     "verificationUrl": "https://www.credly.com/badges/0f33b62d-c203-4d7f-aa8b-7be4228f25ea",
     "featured": true
   },
@@ -45,7 +45,7 @@
     "issuer": "Google for Education",
     "date": "2026",
     "category": "AI & Tools",
-    "file": "/certificates/google-gemini-student.pdf",
+    "image": "/certificates/google-gemini-student.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -55,7 +55,7 @@
     "issuer": "Google for Education",
     "date": "January 1, 2026",
     "category": "AI & Tools",
-    "file": "/certificates/google-gemini-educator.pdf",
+    "image": "/certificates/google-gemini-educator.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -65,7 +65,7 @@
     "issuer": "Simplilearn SkillUp",
     "date": "January 2, 2026",
     "category": "AI & Tools",
-    "file": "/certificates/simplilearn-prompt-engineering.pdf",
+    "image": "/certificates/simplilearn-prompt-engineering.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -75,7 +75,7 @@
     "issuer": "Simplilearn SkillUp",
     "date": "January 3, 2026",
     "category": "Cybersecurity",
-    "file": "/certificates/simplilearn-cybercrime.pdf",
+    "image": "/certificates/simplilearn-cybercrime.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -85,7 +85,7 @@
     "issuer": "Simplilearn SkillUp",
     "date": "January 3, 2026",
     "category": "Cybersecurity",
-    "file": "/certificates/simplilearn-cyber-security.pdf",
+    "image": "/certificates/simplilearn-cyber-security.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -95,7 +95,7 @@
     "issuer": "Simplilearn SkillUp",
     "date": "January 3, 2026",
     "category": "Cybersecurity",
-    "file": "/certificates/simplilearn-chatgpt-cybersecurity.pdf",
+    "image": "/certificates/simplilearn-chatgpt-cybersecurity.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -105,7 +105,7 @@
     "issuer": "Simplilearn SkillUp",
     "date": "January 3, 2026",
     "category": "AI & Tools",
-    "file": "/certificates/simplilearn-generative-ai-studio.pdf",
+    "image": "/certificates/simplilearn-generative-ai-studio.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -115,7 +115,7 @@
     "issuer": "Simplilearn SkillUp",
     "date": "January 3, 2026",
     "category": "AI & Tools",
-    "file": "/certificates/simplilearn-data-analyst.pdf",
+    "image": "/certificates/simplilearn-data-analyst.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -125,7 +125,7 @@
     "issuer": "Hack & Fix",
     "date": "May 22, 2026",
     "category": "Cybersecurity",
-    "file": "/certificates/hackfix-online-fraud.pdf",
+    "image": "/certificates/hackfix-online-fraud.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -135,7 +135,7 @@
     "issuer": "Hack & Fix",
     "date": "December 30, 2025",
     "category": "Cybersecurity",
-    "file": "/certificates/hackfix-phishing.pdf",
+    "image": "/certificates/hackfix-phishing.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -145,7 +145,7 @@
     "issuer": "Hack & Fix",
     "date": "December 28, 2025",
     "category": "Cybersecurity",
-    "file": "/certificates/hackfix-career-starter.pdf",
+    "image": "/certificates/hackfix-career-starter.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -155,7 +155,7 @@
     "issuer": "Security Blue Team",
     "date": "December 22, 2025",
     "category": "Cybersecurity",
-    "file": "/certificates/security-blue-team-penetration-testing.pdf",
+    "image": "/certificates/security-blue-team-penetration-testing.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -165,7 +165,7 @@
     "issuer": "Security Blue Team",
     "date": "December 21, 2025",
     "category": "Cybersecurity",
-    "file": "/certificates/security-blue-team-dark-web.pdf",
+    "image": "/certificates/security-blue-team-dark-web.png",
     "verificationUrl": "",
     "featured": false
   },
@@ -175,7 +175,7 @@
     "issuer": "Programming Hero (Introductory App Course)",
     "date": "February 9, 2026",
     "category": "Web Development",
-    "file": "/certificates/programming-hero-web-development.jpeg",
+    "image": "/certificates/programming-hero-web-development.jpeg",
     "verificationUrl": "https://app.programming-hero.com/certificates/PH74763",
     "featured": false
   },
@@ -185,7 +185,7 @@
     "issuer": "Programming Hero (Introductory App Course)",
     "date": "February 9, 2026",
     "category": "Web Development",
-    "file": "/certificates/programming-hero-react.jpeg",
+    "image": "/certificates/programming-hero-react.jpeg",
     "verificationUrl": "https://app.programming-hero.com/certificates/PH74772",
     "featured": false
   }

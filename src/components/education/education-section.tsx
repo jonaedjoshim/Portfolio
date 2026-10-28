@@ -1,4 +1,5 @@
-import { ArrowUpRight, BookOpen, GraduationCap, Monitor } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, GraduationCap, Monitor } from "lucide-react";
 
 import educationData from "@/data/education.json";
 
@@ -7,7 +8,7 @@ export default function EducationSection() {
     <section
       id="education"
       aria-labelledby="education-heading"
-      className="scroll-mt-24 border-t border-border py-24 sm:py-32"
+      className="scroll-mt-24 border-t border-border py-20 sm:py-24 lg:py-28"
     >
       <div className="container-custom">
         {/* SECTION HEADING */}
@@ -29,9 +30,10 @@ export default function EducationSection() {
           </p>
         </div>
 
+        {/* EDUCATION GRID */}
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
           {/* FORMAL EDUCATION */}
-          <div>
+          <div className="flex flex-col">
             <div className="mb-6 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
                 <GraduationCap size={21} aria-hidden="true" />
@@ -42,11 +44,11 @@ export default function EducationSection() {
               </h3>
             </div>
 
-            <div className="space-y-5">
+            <div className="grid flex-1 grid-rows-2 gap-5">
               {educationData.education.map((item) => (
                 <article
                   key={item.id}
-                  className="rounded-2xl border border-border bg-surface p-6 sm:p-7"
+                  className="flex flex-col rounded-2xl border border-border bg-surface p-6 sm:p-7"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <span className="font-mono text-xs text-accent">
@@ -83,7 +85,7 @@ export default function EducationSection() {
           </div>
 
           {/* TECHNICAL LEARNING */}
-          <div>
+          <div className="flex flex-col">
             <div className="mb-6 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
                 <Monitor size={21} aria-hidden="true" />
@@ -94,11 +96,11 @@ export default function EducationSection() {
               </h3>
             </div>
 
-            <div className="space-y-5">
+            <div className="grid flex-1 grid-rows-2 gap-5">
               {educationData.technicalLearning.map((item) => (
                 <article
                   key={item.id}
-                  className="rounded-2xl border border-border bg-surface p-6 sm:p-7"
+                  className="flex flex-col rounded-2xl border border-border bg-surface p-6 sm:p-7"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <span className="font-mono text-xs text-accent">
@@ -124,33 +126,18 @@ export default function EducationSection() {
                 </article>
               ))}
             </div>
-
-            {/* LEARNING NOTE */}
-            <div className="mt-5 flex items-start gap-3 rounded-xl border border-accent/20 bg-accent/5 p-5">
-              <BookOpen
-                size={19}
-                aria-hidden="true"
-                className="mt-0.5 shrink-0 text-accent"
-              />
-
-              <p className="text-sm leading-7 text-muted">
-                Both technical programs are currently in progress. I continue
-                learning through coursework, documentation, projects, and
-                regular programming practice.
-              </p>
-            </div>
           </div>
         </div>
 
         {/* CREDENTIALS LINK */}
-        <div className="mt-12 border-t border-border pt-7">
-          <a
+        <div className="mt-10 border-t border-border pt-7">
+          <Link
             href="/credentials"
             className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
           >
             Explore Certificates &amp; Credentials
             <ArrowUpRight size={17} aria-hidden="true" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

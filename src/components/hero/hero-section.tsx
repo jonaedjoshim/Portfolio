@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import {
-  ArrowDown,
   ArrowUpRight,
   Download,
   ExternalLink,
@@ -13,6 +11,8 @@ import {
 } from "lucide-react";
 
 import InteractiveBackground from "./interactive-background";
+import TypingRole from "./typing-role";
+import ThemePortrait from "./theme-portrait";
 
 const resumeUrl = "/resume/md-jonaed-joshim-resume.pdf";
 
@@ -67,9 +67,9 @@ export default function HeroSection() {
               <span className="text-accent">Joshim.</span>
             </h1>
 
-            <h2 className="mt-5 max-w-2xl text-lg leading-snug font-medium tracking-tight text-foreground sm:text-2xl md:mt-4 md:text-xl lg:mt-6 lg:text-[1.7rem]">
-              Web Developer <span className="text-muted">&amp;</span>{" "}
-              Competitive Programmer
+            {/* DYNAMIC ROLE */}
+            <h2 className="mt-5 min-h-8 max-w-2xl text-lg leading-snug font-medium tracking-tight text-foreground sm:text-2xl md:mt-4 md:text-xl lg:mt-6 lg:text-[1.7rem]">
+              <TypingRole />
             </h2>
 
             <p className="mt-5 max-w-xl text-sm leading-7 text-muted sm:text-base sm:leading-8 md:mt-4 md:text-sm md:leading-6 lg:mt-6 lg:text-lg lg:leading-8">
@@ -142,14 +142,7 @@ export default function HeroSection() {
           {/* PROFILE VISUAL */}
           <div className="relative mx-auto w-full max-w-75 sm:max-w-85 md:max-w-full lg:max-w-105">
             <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-border bg-surface-secondary">
-              <Image
-                src="/images/profile.webp"
-                alt="Professional portrait of Md Jonaed Joshim"
-                fill
-                priority
-                sizes="(max-width: 639px) 300px, (max-width: 767px) 340px, (max-width: 1023px) 38vw, 420px"
-                className="object-cover object-center"
-              />
+              <ThemePortrait />
 
               {/* CORNER DETAILS */}
               <span className="pointer-events-none absolute top-5 left-5 h-7 w-7 border-t border-l border-accent/50" />
@@ -179,12 +172,6 @@ export default function HeroSection() {
           <span className="font-mono text-[10px] tracking-[0.2em] uppercase">
             Scroll to explore
           </span>
-
-          <ArrowDown
-            size={18}
-            className="animate-bounce motion-reduce:animate-none"
-            aria-hidden="true"
-          />
         </a>
       </div>
     </section>

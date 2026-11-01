@@ -1,6 +1,6 @@
 # Md Jonaed Joshim — Portfolio
 
-A modern, responsive, and interactive developer portfolio built with **Next.js, TypeScript, and Tailwind CSS**..
+A modern, responsive, and interactive developer portfolio built with **Next.js, TypeScript, and Tailwind CSS**.
 
 This website showcases my development journey, technical skills, projects, competitive programming activities, education, credentials, and contact information.
 

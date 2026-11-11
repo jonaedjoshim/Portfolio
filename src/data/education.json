@@ -29,14 +29,6 @@
       "batch": "Batch 14",
       "status": "In Progress",
       "focus": "Frontend development, React, full-stack application development, and practical projects."
-    },
-    {
-      "id": "phitron",
-      "name": "CSE Fundamentals",
-      "provider": "Phitron",
-      "batch": "Batch 09",
-      "status": "In Progress",
-      "focus": "Programming fundamentals, C++, data structures, algorithms, and problem solving."
     }
   ]
 }

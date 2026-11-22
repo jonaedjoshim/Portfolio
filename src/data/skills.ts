@@ -34,6 +34,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Next.js", icon: "nextjs" },
       { name: "Vite", icon: "vitejs" },
       { name: "Tailwind CSS", icon: "tailwindcss" },
+      { name: "HeroUI" },
+      { name: "Framer Motion" },
       { name: "Bootstrap", icon: "bootstrap" },
     ],
   },
@@ -46,6 +48,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Express.js", icon: "express" },
       { name: "Firebase", icon: "firebase" },
       { name: "Better Auth" },
+      { name: "JWT" },
+      { name: "Stripe" },
     ],
   },
   {

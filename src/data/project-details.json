@@ -1,4 +1,27 @@
 {
+  "wedplan": {
+    "tagline": "A role-based wedding planning platform connecting customers, vendors, and admins.",
+    "overview": "WedPlan is a wedding planning platform built as a full-stack assignment with three user roles: customer, vendor, and admin. Vendors publish service posts, and customers apply to the services they need. Vendors manage their own posts and respond to applications, while admins oversee all posts and manage user accounts. The project was built individually with AI-assisted guidance, and I wrote, tested, and debugged the code myself. Payment was explored through the Stripe API in test mode only, so no real transactions were processed.",
+    "features": [
+      "Role-based access for customers, vendors, and admins",
+      "Vendors can create service posts",
+      "Customers can apply to vendor service posts",
+      "Vendors can accept or decline applications and delete their own posts",
+      "Admins can view and delete posts",
+      "Admins can update user roles, block users, and delete users",
+      "Stripe API integration as part of the assignment (test mode, no real transactions)"
+    ],
+    "challenges": [
+      "Authentication with Better Auth and JWT across the client and server was the hardest part and needed step-by-step debugging.",
+      "No design was provided, so I worked through layout, color combinations, and code structure with AI tools before building the UI step by step.",
+      "Finding and fixing bugs across the role-based flows took significant time."
+    ],
+    "improvements": [
+      "No further features are planned, since this project was built to meet assignment requirements."
+    ],
+    "role": "Individual assignment project",
+    "status": "Completed"
+  },
   "gradepilot": {
     "tagline": "Making academic results easier to understand.",
     "overview": "GradePilot is a personal full-stack project designed to help students calculate and organize academic results. It started as a GPA and CGPA calculator inspired by the difficulty of working through university grading rules manually, and gradually evolved into an application with authentication, saved results, and academic insights.",

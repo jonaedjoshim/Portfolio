@@ -1,4 +1,36 @@
 {
+  "wedplan": {
+    "title": "Building WedPlan: From Assignment to Working Platform",
+    "subtitle": "How a role-based assignment became a working full-stack platform.",
+    "readingTime": "3 min read",
+    "sections": [
+      {
+        "heading": "The Assignment",
+        "paragraphs": [
+          "WedPlan started as an assignment with clear requirements: three user roles, service posts, applications, and admin controls. My goal was to meet every requirement and make the full flow work from start to finish."
+        ]
+      },
+      {
+        "heading": "Designing Without a Template",
+        "paragraphs": [
+          "The assignment did not include a design, so I worked through layout, color combinations, and code structure with AI tools. Then I built the project in small steps and committed my progress gradually."
+        ]
+      },
+      {
+        "heading": "Authentication and Debugging",
+        "paragraphs": [
+          "Authentication was the most challenging part. Setting up Better Auth and JWT across the client and server required careful debugging, and a large share of the development time went into finding and fixing bugs in the role-based flows."
+        ]
+      },
+      {
+        "heading": "Where It Stands",
+        "paragraphs": [
+          "WedPlan is complete and live. AI tools helped with guidance, but I wrote, tested, and debugged the code myself. No further features are planned, since the project was built for an assignment.",
+          "Payment was explored through the Stripe API in test mode only, so no real transactions took place."
+        ]
+      }
+    ]
+  },
   "gradepilot": {
     "title": "From a GPA Calculator to GradePilot",
     "subtitle": "How a small academic problem became a full-stack learning project.",

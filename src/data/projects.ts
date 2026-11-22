@@ -13,6 +13,32 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "wedplan",
+    name: "WedPlan",
+    category: "Full-Stack Web Application",
+    description:
+      "A role-based wedding planning platform connecting customers, vendors, and admins.",
+    image: "/pss/wed-plan.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HeroUI",
+      "Framer Motion",
+      "Express",
+      "MongoDB",
+      "Better Auth",
+      "JWT",
+      "Stripe",
+    ],
+    liveUrl: "https://wed-plan-mj.vercel.app/",
+    githubUrl:
+      "https://github.com/jonaedjoshim/Ph-Assignment-09-Wed-Plan-Client.git",
+    backendGithubUrl:
+      "https://github.com/jonaedjoshim/Ph-Assignment-09-Wed-Plan-Server.git",
+    featured: true,
+  },
+  {
     slug: "gradepilot",
     name: "GradePilot",
     category: "Full-Stack Web Application",
@@ -46,7 +72,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://zap-shift-mj.vercel.app/",
     githubUrl: "https://github.com/jonaedjoshim/zap-shift-client.git",
-    featured: true,
+    featured: false,
     backendGithubUrl: "https://github.com/jonaedjoshim/zap-shift-server.git",
   },
   {

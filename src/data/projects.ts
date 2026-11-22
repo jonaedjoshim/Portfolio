@@ -93,7 +93,7 @@ export const projects: Project[] = [
     name: "Tuition Finder",
     category: "Full-Stack Web Application",
     description:
-      "An ongoing tuition discovery project focused on connecting students and tutors.",
+      "A completed tuition discovery project connecting students and tutors.",
     image: "/pss/tuition-finder.png",
     technologies: [
       "React",

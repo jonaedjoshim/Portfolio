@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function CredentialsPage() {
   return (
-    <main>
+    <div>
       {/* PAGE HEADER */}
       <section className="border-b border-border bg-surface/40">
         <div className="container-custom py-16 sm:py-20 lg:py-24">
@@ -59,6 +59,6 @@ export default function CredentialsPage() {
           <CredentialsExplorer certificates={certificates} />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

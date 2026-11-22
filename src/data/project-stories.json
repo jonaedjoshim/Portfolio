@@ -166,7 +166,7 @@
   },
   "tuition-finder": {
     "title": "Tuition Finder and the Importance of Clear Requirements",
-    "subtitle": "An unfinished project that taught me lessons beyond code.",
+    "subtitle": "A client-initiated project that taught me lessons beyond code.",
     "readingTime": "4 min read",
     "sections": [
       {
@@ -187,21 +187,21 @@
         "heading": "The Difficult Part Was Not Only Technical",
         "paragraphs": [
           "The biggest lesson was about communication and scope. It is difficult to estimate or complete work when the expected features continue changing without a clearly agreed plan.",
-          "Eventually, communication with the prospective client stopped. The project was not completed, accepted, or delivered as paid client work."
+          "Eventually, communication with the prospective client stopped. The work was not accepted or delivered as paid client work, so I carried it forward as a personal project and completed it."
         ]
       },
       {
         "heading": "What I Took Away",
         "paragraphs": [
           "The experience helped me understand why requirements, deliverables, timelines, and expectations should be clarified before development goes too far.",
-          "It also reminded me that unfinished projects can still provide useful learning, as long as their status is represented accurately."
+          "It also reminded me that projects shaped by changing requirements can still provide useful learning, as long as their status is represented accurately."
         ]
       },
       {
-        "heading": "What Comes Next",
+        "heading": "Where It Stands",
         "paragraphs": [
-          "Tuition Finder remains an incomplete project. If I return to it, I would first define a smaller, verifiable set of features and complete those before expanding the application.",
-          "My priority would be finishing the main discovery workflows, validation, and a reliable user experience."
+          "Tuition Finder is now complete as a personal project. The lessons from the client conversations stayed with me: requirements, deliverables, timelines, and expectations should be clarified before development goes too far.",
+          "If I revisit it, I would start by refining validation and error handling, then improve the discovery workflows based on real user feedback."
         ]
       }
     ]

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-[calc(100svh-4.5rem)]">
+    <div className="min-h-[calc(100svh-4.5rem)]">
       {/* PAGE INTRODUCTION */}
       <section className="border-b border-border bg-surface/40">
         <div className="container-custom py-16 sm:py-20 lg:py-24">
@@ -44,6 +44,6 @@ export default function ProjectsPage() {
           <ProjectsExplorer projects={projects} />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

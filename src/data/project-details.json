@@ -94,14 +94,14 @@
     "status": "Portfolio project"
   },
   "tuition-finder": {
-    "tagline": "Exploring a platform for finding tutors and tuition opportunities.",
-    "overview": "Tuition Finder began from a local client inquiry and evolved from an initially simple frontend concept toward a full-stack application. The requirements changed during development, and the project was not completed or delivered as a paid client engagement. It remains an unfinished learning project that helped me think more carefully about defining requirements and managing scope.",
+    "tagline": "Connecting students and tutors through a tuition discovery platform.",
+    "overview": "Tuition Finder began from a local client inquiry and evolved from an initially simple frontend concept toward a full-stack application. The requirements changed during development, and the work was not delivered as a paid client engagement. I carried the project forward as a personal learning project and completed it, learning to define requirements and manage scope more carefully.",
     "features": [
       "React-based frontend interface",
       "Firebase authentication integration",
       "Backend API development with Express",
       "MongoDB data integration",
-      "Tuition and tutor discovery concept"
+      "Tuition and tutor discovery workflows"
     ],
     "challenges": [
       "Adapting to changing requirements as the proposed scope expanded from frontend data to full-stack functionality.",
@@ -109,11 +109,11 @@
       "Learning the importance of scope definition and clear communication in client-oriented work."
     ],
     "improvements": [
-      "Clarify and finalize the intended feature set.",
-      "Complete and verify the main tuition discovery workflows.",
-      "Improve form validation, error handling, and responsive usability."
+      "Clarify and finalize the intended feature set before expanding scope.",
+      "Strengthen form validation and error handling in a future iteration.",
+      "Improve responsive usability through broader device testing."
     ],
-    "role": "Client-initiated, unfinished project",
-    "status": "Incomplete"
+    "role": "Client-initiated, completed personal project",
+    "status": "Completed"
   }
 }

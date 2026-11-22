@@ -32,7 +32,7 @@ const interestIcons = [Code2, Brain, Compass, BookOpen];
 
 export default function AboutPage() {
   return (
-    <main>
+    <div>
       {/* PAGE INTRO */}
       <section className="border-b border-border bg-surface/40">
         <div className="container-custom py-16 sm:py-20 lg:py-24">
@@ -203,6 +203,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
